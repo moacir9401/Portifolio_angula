@@ -1,0 +1,23 @@
+.menu {
+    height: 10px;
+    margin-top: -1rem;
+}
+
+.menu li.active .nav-link {
+    color: #157DB7 !important;
+}
+
+.menu .nav-link {
+    color: #eee;
+    font-family: DM Sans;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu .nav-link:hover {
+    color: #157DB7;
+    font-size: 1.575rem;
+}

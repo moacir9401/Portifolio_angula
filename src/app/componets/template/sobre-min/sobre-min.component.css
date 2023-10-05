@@ -1,0 +1,171 @@
+.destaque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    height: 60vh;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    width: 20.5rem;
+    flex-wrap: wrap;
+    height: 50vh;
+    align-items: self-start;
+}
+
+.titulo {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+    padding: 0;
+    margin: 0;
+    align-self: flex-start;
+}
+
+.titulo-nome {
+    color: #157DB7;
+}
+
+.legenda {
+    color: #828282;
+    font-family: Poppins;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 1.5rem;
+}
+
+.btn-blue,
+.btn-outline-blue {
+    border-radius: 1.875rem;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    color: #FFF;
+    font-family: DM Sans;
+    font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: .4rem 1.3rem;
+    border: 1px solid #157DB7;
+}
+
+.btn-blue {
+    background: conic-gradient(from 232deg at 50% 50%, #157DB7 0deg, #2B77A1 360deg);
+    transition: conic-gradient 0.5s;
+}
+
+.btn-outline-blue {
+    border: 1px solid #157DB7;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.btn-blue:hover {
+    background: transparent;
+}
+
+.btn-outline-blue:hover {
+    background: conic-gradient(from 232deg at 50% 50%, #157DB7 0deg, #2B77A1 360deg);
+}
+
+.img-desenvolvedor {
+    position: relative;
+    background: url("../../../../assets/images/fundoDesenvolvedor.svg");
+    background-repeat: no-repeat;
+    width: 313px;
+    height: 329px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    -webkit-mask: url('../../../../assets/images/Rectangle 4.svg') no-repeat center center;
+    mask: url ('../../../../assets/images/Rectangle 4.svg') no-repeat center center;
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    transform: rotate(0deg);
+    transition: all 2s ease-in-out;
+}
+
+@keyframes spin30deg {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes reverseSpin30deg {
+    0% {
+        transform: rotate(0deg);
+    }
+    15% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+@keyframes reverseSpindeg {
+    0% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spindeg {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.img-desenvolvedor img {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    bottom: 0rem;
+    transition: all .4s ease-in-out;
+}
+
+.img-desenvolvedor:hover {
+    animation: spin30deg 2s forwards;
+}
+
+.img-desenvolvedor:not(hover) {
+    animation: spindeg 2s forwards;
+}
+
+.img-desenvolvedor:not(hover) img {
+    animation: reverseSpindeg 2s forwards;
+}
+
+.img-desenvolvedor:hover img {
+    animation: reverseSpin30deg 2s forwards;
+    bottom: 1rem;
+}
