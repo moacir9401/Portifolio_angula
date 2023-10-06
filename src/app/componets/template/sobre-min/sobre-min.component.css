@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     align-content: center;
-    width: 20.5rem;
+    width: 21.5rem;
     flex-wrap: wrap;
     height: 50vh;
     align-items: self-start;
@@ -69,19 +69,25 @@
 .btn-blue {
     background: conic-gradient(from 232deg at 50% 50%, #157DB7 0deg, #2B77A1 360deg);
     transition: conic-gradient 0.5s;
+    transition: all 0.5s;
 }
 
 .btn-outline-blue {
     border: 1px solid #157DB7;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: all 0.5s;
 }
 
 .btn-blue:hover {
     background: transparent;
+    font-size: 1rem;
+    margin-left: -.5rem;
 }
 
 .btn-outline-blue:hover {
     background: conic-gradient(from 232deg at 50% 50%, #157DB7 0deg, #2B77A1 360deg);
+    font-size: 1rem;
+    margin-right: -.5rem;
 }
 
 .img-desenvolvedor {

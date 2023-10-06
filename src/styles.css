@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,700&family=Poppins:wght@100;200;300;400;500;600&display=swap');
 body {
     background-color: #13131F;
+    background: linear-gradient(217deg, rgb(19, 19, 31), rgba(19, 19, 31, .5) 70.71%), linear-gradient(127deg, rgb(25, 25, 44), rgba(19, 19, 31, .5) 70.71%), linear-gradient(336deg, rgba(19, 19, 31, 0.8), rgba(19, 19, 31, 1) 70.71%);
+    background-size: cover;
     color: #eee;
+    min-height: 100vh;
 }
 
 .titulo {
