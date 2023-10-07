@@ -17,7 +17,7 @@ import { SobreMinComponent } from './componets/Template/sobre-min/sobre-min.comp
     HeaderComponent,
     MenuComponent,
     ApresentacaoComponent,
-    SobreMinComponent,
+    SobreMinComponent
   ],
   imports: [
     BrowserModule,
