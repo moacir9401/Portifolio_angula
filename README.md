@@ -1,27 +1,75 @@
-# Portifolio
+# Portfólio Angular
+Este repositório contém o código-fonte do meu portfólio desenvolvido em Angular. Abaixo estão detalhes sobre as diferentes seções do projeto.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.5.
+### Página Principal
+A página principal destaca informações essenciais sobre mim.
 
-## Development server
+```html
+<div class="page destaque">
+    <!-- Conteúdo da apresentação -->
+</div>
+```
+### Sobre Mim
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Na seção "Sobre Mim", apresento uma descrição mais detalhada sobre minha formação e experiência.
 
-## Code scaffolding
+```html
+<div>
+    <div class="titulo pt-5 mt-5">Sobre Mim</div>
+    <div class="descricao">
+        <!-- Descrição detalhada sobre mim -->
+    </div>
+</div>
+```
+### Menu de Navegação
+O menu de navegação facilita a transição entre as diferentes seções do portfólio.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```html
+<nav class="navbar navbar-expand-lg  menu">
+    <!-- Botão de toggler para menu responsivo -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-## Build
+    <!-- Itens do menu -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Habilidades</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Projetos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contato</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+```
+### Habilidades
+A seção de habilidades destaca as linguagens e tecnologias que tenho conhecimento.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Java
+- JavaScript
+- React
+- C#
+- .NET Core
+- .NET MVC
+- PHP
+- CSS
+- Sass
+- jQuery
+- Bootstrap
+- Metodologias Ágeis
 
-## Running unit tests
+### Projetos no GitHub
+Você pode conferir meus projetos no GitHub para ver exemplos práticos do meu trabalho.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Inclua links para os seus projetos do GitHub.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+<br/>
+Sinta-se à vontade para explorar o código fonte deste portfólio e entre em contato se tiver alguma dúvida ou oportunidade de colaboração!
